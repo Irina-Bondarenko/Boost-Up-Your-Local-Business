@@ -1,0 +1,82 @@
+@include full-hd {
+  .about-us .container {
+    max-width: $breackpoint-laptop;
+  }
+
+  div .about-us__image {
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 18%;
+  }
+
+  .about-us .about-us__description {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .about-us .about-us__description h3 {
+    margin-top: 30px;
+    align-content: center;
+  }
+}
+
+@include laptop() {
+  .about-us .container {
+    max-width: $breackpoint-tablet;
+  }
+  div .about-us__image {
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 18%;
+  }
+
+  .about-us .about-us__description {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .about-us .about-us__description h3 {
+    margin-top: 30px;
+    align-content: center;
+  }
+}
+
+@include tablet() {
+  //.about-us .container {
+  //  max-width: $breackpoint-phone;
+  //}
+
+  div .about-us__image {
+    width: 100%;
+    background-repeat: no-repeat;
+    left: 18%;
+    position: inherit;
+    margin: 0;
+  }
+
+  .about-us .about-us__description {
+    margin-left: 0;
+    width: 100%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .about-us .about-us__description h3 {
+    margin-top: 30px;
+    align-content: center;
+  }
+}
+
+@include phone() {
+  .about-us .container {
+    max-width: $breackpoint-phone;
+  }
+  div .about-us__image {
+    width: 350px;
+    height: 450px;
+  }
+}

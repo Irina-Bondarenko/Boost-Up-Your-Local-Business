@@ -1,0 +1,48 @@
+@include full-hd {
+  header .container {
+    max-width: $breackpoint-laptop;
+    margin: 0 auto;
+  }
+  header .menu {
+    text-align: center;
+    padding-left: 0;
+  }
+}
+
+@include laptop() {
+  header .container {
+    max-width: $breackpoint-tablet;
+    text-align: center;
+    padding-left: 0;
+  }
+
+  header .menu {
+    padding-left: 0;
+  }
+}
+
+@include tablet() {
+  header .container {
+    max-width: $breackpoint-phone;
+  }
+  header .row {
+    display: flex;
+    flex-direction: column;
+  }
+  .header menu {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@include phone() {
+  header .row {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .header menu {
+    display: flex;
+    flex-direction: column;
+  }
+}

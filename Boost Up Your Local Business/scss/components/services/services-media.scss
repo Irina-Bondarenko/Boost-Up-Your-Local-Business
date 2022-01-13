@@ -1,0 +1,58 @@
+@include full-hd {
+  .services .container {
+    max-width: $breackpoint-laptop;
+  }
+}
+
+@include laptop() {
+  .services .container {
+    max-width: $breackpoint-tablet;
+  }
+}
+
+@include tablet() {
+  .services .container {
+    max-width: $breackpoint-phone;
+    margin: auto;
+  }
+
+  .services__blocks {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .services__blocks-icons {
+    width: 100%;
+    text-align: center;
+  }
+
+  .services__blocks-icons:not(:nth-of-type(6)) {
+    margin-bottom: 50px;
+  }
+
+  .services__image,
+  .services__image-hat,
+  .services__image-usd {
+    margin-right: 15px;
+    margin-bottom: 30px;
+  }
+
+  .services__heading {
+    margin-bottom: 10px;
+  }
+
+  .services__lorem {
+    margin-bottom: 70px;
+  }
+
+  .services {
+    padding-bottom: 50px;
+  }
+}
+
+@include phone() {
+  .services .container {
+    max-width: $breackpoint-phone;
+  }
+}

@@ -1,0 +1,48 @@
+@mixin input($source) {
+  $icon-width: 15px;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url($source);
+    z-index: 100;
+    position: absolute;
+    background-size: cover;
+    left: 20px - 7.5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin button() {
+  color: $color-wht;
+  border-radius: 2px;
+  outline: none;
+}
+
+@mixin full-hd() {
+  @media (max-width: $breackpoint-full-hd) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: $breackpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $breackpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: $breackpoint-phone) {
+    @content;
+  }
+}

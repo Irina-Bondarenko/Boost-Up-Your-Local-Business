@@ -1,0 +1,36 @@
+.about-us {
+  background-color: $about-us-bg-color;
+  color: $about-us-text-color;
+
+  &__description {
+    width: calc(50% - 150px);
+    margin-left: 70px;
+  }
+
+  &__image {
+    width: 675px;
+    height: 495px;
+    margin-left: -105px;
+    position: relative;
+    background-image: url("url('./../images/about-us.png");
+  }
+
+  h3 {
+    margin-top: 165px;
+    margin-bottom: 25px;
+    font-size: $font-size-extral;
+  }
+
+  p {
+    margin-bottom: 30px;
+  }
+
+  button {
+    background-color: $about-us-bg-color;
+    @include button;
+    border-color: $about-us-btn-border-color;
+    border-style: solid;
+    width: 145px;
+    height: 45px;
+  }
+}

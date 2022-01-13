@@ -1,0 +1,66 @@
+.services {
+  margin-top: 200px;
+  line-height: 25px;
+  padding-bottom: 125px;
+
+  .row {
+    justify-content: center;
+    margin: 30px;
+  }
+
+  &__heading,
+  &__lorem {
+    width: 100%;
+  }
+
+  &__lorem {
+    margin-bottom: 95px;
+  }
+
+  &__image {
+    width: 45px;
+    height: 45px;
+    margin-right: 45px;
+  }
+
+  &__image-usd {
+    width: 30px;
+    height: 55px;
+    justify-self: center;
+    margin-right: calc(45px + 45px - 30px - 10px);
+    margin-left: 10px;
+  }
+
+  &__image-hat {
+    width: 60px;
+    height: 55px;
+    margin-right: calc(45px - 15px);
+  }
+
+  h3 {
+    margin-bottom: 20px;
+  }
+
+  &__blocks {
+    @extend %flex-wrap;
+    justify-content: center;
+  }
+
+  &__blocks-icons {
+    width: calc(50% - 45px * 2 - 50px);
+    margin-right: 20px;
+  }
+
+  &__blocks-icons:not(:nth-of-type(5)):not(:nth-of-type(6)) {
+    margin-bottom: 50px;
+  }
+
+  &__heading,
+  &__lorem {
+    text-align: center;
+  }
+
+  p:not(.services__lorem) {
+    color: $services-p-color;
+  }
+}

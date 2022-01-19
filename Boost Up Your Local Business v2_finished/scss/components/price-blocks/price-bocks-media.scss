@@ -1,0 +1,64 @@
+@include full-hd {
+  .choose-your-price .container {
+    max-width: $breackpoint-laptop;
+  }
+  .basic-plan {
+    background-color: $color-blk;
+  }
+}
+
+@include laptop() {
+  .basic-plan {
+    background-color: $color-blk;
+  }
+
+  .choose-your-price__price-blocks .input_button {
+    margin-bottom: 20px;
+  }
+}
+
+@include tablet() {
+  .choose-your-price .container {
+    max-width: $breackpoint-phone;
+    margin: 0 auto;
+  }
+
+  //.row,
+  .choose-your-price .choose-your-price__price-blocks {
+    display: block;
+  }
+
+  .choose-your-price__plan.basic-plan,
+  .choose-your-price__plan.gold-plan,
+  .choose-your-price__plan.premium-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+}
+
+@include phone() {
+  .choose-your-price .container {
+    max-width: $breackpoint-phone;
+  }
+
+  .choose-your-price .container {
+    max-width: $breackpoint-phone;
+    margin: 0 auto;
+  }
+
+  //.row,
+  .choose-your-price .choose-your-price__price-blocks {
+    display: block;
+  }
+
+  .choose-your-price__plan.basic-plan,
+  .choose-your-price__plan.gold-plan,
+  .choose-your-price__plan.premium-plan {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+
+  main .choose-your-price {
+    padding-bottom: 100px;
+  }
+}

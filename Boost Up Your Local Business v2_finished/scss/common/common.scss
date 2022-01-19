@@ -1,0 +1,28 @@
+body {
+  font-family: $main-font;
+  font-size: $font-size-md;
+}
+
+.container {
+  max-width: $content-width;
+  padding: 0 $content-x-padding;
+  margin: 0 auto;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+a {
+  display: inline-block;
+}
+
+h2 {
+font-family: "Gotham";
+}
+
+p {
+  font-family: "Open Sans";
+  font-weight: 200;
+}

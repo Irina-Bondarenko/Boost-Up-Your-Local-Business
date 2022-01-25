@@ -1,0 +1,203 @@
+@mixin input($source) {
+  $icon-width: 15px;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    background-image: url($source);
+    z-index: 100;
+    position: absolute;
+    background-size: cover;
+    left: 20px - 7.5px;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin input-newsletter-email($source) {
+  $icon-width: 15px;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 16px;
+    height: 13px;
+    background-image: url($source);
+    z-index: 100;
+    position: absolute;
+    background-size: cover;
+    left: 20px - 7.5px;
+    top: 55%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin button() {
+  color: $color-wht;
+  border-radius: 2px;
+  outline: none;
+}
+
+@mixin full-hd() {
+  @media (max-width: $breackpoint-full-hd) {
+    @content;
+  }
+}
+
+@mixin laptop() {
+  @media (max-width: $breackpoint-laptop) {
+    @content;
+  }
+}
+
+@mixin tablet() {
+  @media (max-width: $breackpoint-tablet) {
+    @content;
+  }
+}
+
+@mixin phone() {
+  @media (max-width: $breackpoint-phone) {
+    @content;
+  }
+}
+
+@mixin pointer-rotate-left($source) {
+  content: "";
+  position: absolute;
+  background-image: url($source);
+  background-repeat: no-repeat;
+  top: 70%;
+  right: 20%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+@mixin pointer-rotate-right($source) {
+  content: "";
+  position: absolute;
+  background-image: url($source);
+  background-repeat: no-repeat;
+  top: 68%;
+  left: 98%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+@mixin pointer-right($source) {
+  content: "";
+  position: absolute;
+  background-image: url($source);
+  background-repeat: no-repeat;
+  top: -9%;
+  left: 95%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+@mixin pointer-left($source) {
+  content: "";
+  position: absolute;
+  background-image: url($source);
+  background-repeat: no-repeat;
+  top: -11%;
+  right: 20%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+@mixin quotes-top($source) {
+  content: "";
+  position: absolute;
+  background-image: url($source);
+  background-repeat: no-repeat;
+  top: 0%;
+  left: -6%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+@mixin quotes-bottom($source) {
+  content: "";
+  position: absolute;
+  background-image: url($source);
+  background-repeat: no-repeat;
+  top: 90%;
+  left: 70%;
+  height: 100px;
+  width: 100px;
+  display: inline-block;
+}
+
+@mixin newsletter-shape {
+  position: absolute;
+  width: 290px;
+  height: 295px;
+  background-repeat: no-repeat;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
+@mixin newsletter-shape-adaptive {
+  position: absolute;
+  width: 190px;
+  height: 195px;
+  background-repeat: no-repeat;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
+@mixin newsletter-logo {
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  background-repeat: no-repeat;
+  top: 64%;
+  left: 50%;
+  transform: translate(-50%, -15%);
+}
+
+@mixin footer-phone($source) {
+  $icon-width: 15px;
+  position: relative;
+
+  &:before {
+    content: "";
+    display: inline-block;
+    width: 18px;
+    height: 18px;
+    background-image: url($source);
+    z-index: 100;
+    position: absolute;
+    background-size: cover;
+    left: -23px;
+    top: 30%;
+    transform: translateY(-50%);
+  }
+}
+
+@mixin rgba-about-us {
+  margin-left: 0;
+  width: 100%;
+  text-align: center;
+  padding-bottom: 30px;
+  padding-left: 0;
+  background: rgba(245, 235, 235, 0.5);
+  color: $color-blk;
+}
+
+@mixin flex-column {
+  display: flex;
+  flex-direction: column;
+}

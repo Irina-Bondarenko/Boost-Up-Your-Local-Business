@@ -1,0 +1,57 @@
+@include full-hd {
+  .about-us .container {
+    max-width: $breackpoint-laptop;
+  }
+
+  .about-us .about-us__description {
+    margin-left: 0;
+    width: 50%;
+    text-align: center;
+    padding-bottom: 30px;
+  }
+
+  .about-us .about-us__description h3 {
+    margin-top: 30px;
+    align-content: center;
+  }
+}
+
+@include laptop() {
+  .about-us .container {
+    max-width: $breackpoint-tablet;
+  }
+  main .about-us {
+    background-size: 100% 100%;
+  }
+
+  .about-us .about-us__description {
+    @include rgba-about-us;
+    margin-top: 30px;
+  }
+
+  .about-us .about-us__description h3 {
+    margin-top: 30px;
+    align-content: center;
+  }
+
+  main .about-us p {
+    margin: 15px 15px;
+  }
+}
+
+@include tablet() {
+  .about-us .about-us__description {
+    @include rgba-about-us;
+  }
+
+  .about-us .about-us__description h3 {
+    margin-top: 30px;
+    align-content: center;
+  }
+}
+
+@include phone() {
+  .about-us .container {
+    max-width: $breackpoint-phone;
+  }
+}

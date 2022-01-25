@@ -1,0 +1,99 @@
+.works {
+  padding-top: 155px;
+  background-color: $color-wht;
+
+  .media-laptop {
+    display: none;
+  }
+
+  .row {
+    display: block;
+  }
+
+  &__images {
+    @extend %flex-wrap;
+    justify-content: space-around;
+    padding: 0 90px 0 100px;
+  }
+
+  &__button {
+    background-color: $color-yellow;
+    @include button;
+    border: none;
+    width: 165px;
+    height: 45px;
+    margin: 0 auto 150px auto;
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, 0);
+  }
+
+  &__heading {
+    text-align: center;
+    line-height: 20px;
+    margin-bottom: 105px;
+  }
+
+  p {
+    font-weight: 100;
+  }
+
+  &__description {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    padding-bottom: 95px;
+    margin-left: 20px;
+  }
+
+  &__description p {
+    line-height: 22px;
+    font-size: 14px;
+    max-width: 90%;
+    color: $clients-quotes;
+  }
+
+  h3 {
+    font-family: "Lato";
+    font-weight: 200;
+    margin-bottom: 30px;
+    margin-top: 50px;
+    max-width: 90%;
+  }
+
+  &__step1 {
+    margin-right: 20px;
+  }
+
+  .doted-line-rotate {
+    padding-top: 80px;
+  }
+  .image-dotted-line-rotate,
+  .image-dotted-line {
+    position: relative;
+  }
+
+  .image-dotted-line-rotate::before {
+    @include pointer-rotate-left("../images/2pointer-left.png");
+  }
+  .image-dotted-line-rotate::after {
+    @include pointer-rotate-right("../images/2pointer-right.png");
+  }
+
+  .image-dotted-line::before {
+    @include pointer-left("../images/3pointer-left.png");
+  }
+
+  .image-dotted-line::after {
+    @include pointer-right("../images/3pointer-right.png");
+  }
+
+  .dotted-line {
+    top: -30%;
+    position: absolute;
+  }
+  .image-dotted-line {
+    width: 115px;
+    height: 107px;
+  }
+}

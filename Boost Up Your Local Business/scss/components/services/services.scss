@@ -2,10 +2,10 @@
   margin-top: 200px;
   line-height: 25px;
   padding-bottom: 125px;
+  background-color: $color-wht;
 
   .row {
     justify-content: center;
-    margin: 30px;
   }
 
   &__heading,
@@ -44,11 +44,15 @@
   &__blocks {
     @extend %flex-wrap;
     justify-content: center;
+    width: 100%;
   }
 
   &__blocks-icons {
     width: calc(50% - 45px * 2 - 50px);
-    margin-right: 20px;
+  }
+
+  &__blocks-icons:not(:nth-of-type(2)):not(:nth-of-type(4)):not(:nth-of-type(6)) {
+    margin-right: 100px;
   }
 
   &__blocks-icons:not(:nth-of-type(5)):not(:nth-of-type(6)) {

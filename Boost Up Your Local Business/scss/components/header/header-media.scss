@@ -26,23 +26,19 @@
     max-width: $breackpoint-phone;
   }
   header .row {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
   }
   .header menu {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
   }
 }
 
 @include phone() {
   header .row {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
   }
 
   .header menu {
-    display: flex;
-    flex-direction: column;
+    @include flex-column;
   }
 }

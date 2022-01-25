@@ -4,7 +4,7 @@
     margin: 0 auto;
   }
 
-  .input_button {
+  .boost-up__form .input_button {
     margin-top: 10px;
   }
 }
@@ -45,6 +45,14 @@
   .input_form {
     margin-bottom: 10px;
   }
+  .boost-up .boost-up__img-laptop,
+  .boost-up .boost-up__movie {
+    display: none;
+  }
+
+  main .services {
+    margin-top: 100px;
+  }
 }
 
 @include phone() {
@@ -52,11 +60,13 @@
     width: 100%;
     margin: 0 auto;
   }
-  .boost-up .boost-up__img-laptop {
-    display: none;
-  }
-
+  .boost-up .boost-up__img-laptop,
   .boost-up .boost-up__movie {
     display: none;
   }
+  main .services {
+    margin-top: 100px;
+  }
+
+
 }

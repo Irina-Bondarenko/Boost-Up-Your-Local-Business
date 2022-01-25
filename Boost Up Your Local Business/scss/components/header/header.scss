@@ -6,10 +6,9 @@
   font-weight: 100;
 
   .row {
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
   }
-
 
   menu {
     display: flex;
@@ -17,9 +16,6 @@
     margin: 0 auto;
     padding-left: 0;
   }
-
-
-
 
   a {
     padding: 12px 22px;
@@ -35,19 +31,5 @@
     background-color: #ffbb42;
     color: white;
     border-radius: 3px;
-  }
-
-  .header__label,
-  .header__hiden-menu {
-    width: 20px;
-    height: 20px;
-    align-content: end;
-    position: fixed;
-    right: 10px;
-  }
-
-  label,
-  input {
-    display: none;
   }
 }

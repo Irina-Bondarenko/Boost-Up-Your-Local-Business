@@ -1,22 +1,25 @@
 .about-us {
   background-color: $about-us-bg-color;
   color: $about-us-text-color;
+  background-image: url("./../images/about-us.png");
+  background-size: 50% 100%;
+  background-repeat: no-repeat;
+  height: 615px;
 
   &__description {
-    width: calc(50% - 150px);
-    margin-left: 70px;
+    width: 50%;
+    padding-left: 80px;
+    margin-top: 165px;
+    padding-bottom: 175px;
+    line-height: 30px;
+    font-size: $font-size-sm;
   }
 
-  &__image {
-    width: 675px;
-    height: 495px;
-    margin-left: -105px;
-    position: relative;
-    background-image: url("url('./../images/about-us.png");
+  .row {
+    justify-content: flex-end;
   }
 
   h3 {
-    margin-top: 165px;
     margin-bottom: 25px;
     font-size: $font-size-extral;
   }
